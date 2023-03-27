@@ -1,1 +1,6 @@
 @use 'global';
+@use 'main_structure';
+
+body {
+    background-color: var(--clr-primary-1);
+}

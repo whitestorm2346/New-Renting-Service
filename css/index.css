@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+:root {
+  --clr-primary-1: #ffe5d3;
+  --clr-primary-2: #faccae;
+  --clr-primary-3: #ffba8c;
+  --clr-primary-4: #ffa76d;
+  --clr-primary-5: #ff8f44;
+  --clr-primary-6: #f58133;
+  --clr-primary-7: #e47327;
+  --clr-primary-8: #d6651a;
+  --clr-primary-9: #ca5a10;
+  --clr-primary-10: #bb4b00;
+  --clr-secondary-1: #111111;
+  --clr-secondary-2: #111111;
+  --clr-secondary-3: #111111;
+  --clr-secondary-4: #111111;
+  --clr-secondary-5: #111111;
+  --clr-secondary-6: #111111;
+  --clr-secondary-7: #111111;
+  --clr-secondary-8: #111111;
+  --clr-secondary-9: #111111;
+  --clr-secondary-10: #111111;
+  --clr-light-1: #ffffff;
+  --clr-light-2: #ffffff;
+  --clr-light-3: #ffffff;
+  --clr-light-4: #ffffff;
+  --clr-light-5: #ffffff;
+  --clr-dark-1: #000000;
+  --clr-dark-2: #000000;
+  --clr-dark-3: #000000;
+  --clr-dark-4: #000000;
+  --clr-dark-5: #000000;
+  --clr-grey-1: #555555;
+  --clr-grey-2: #555555;
+  --clr-grey-3: #555555;
+  --clr-grey-4: #555555;
+  --clr-grey-5: #555555;
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+===============================
+header part
+===============================
+*/
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*
+===============================
+footer part
+===============================
+*/
+footer {
+  background-color: var(--clr-primary-9);
+}
+
+body {
+  background-color: var(--clr-primary-1);
+}
+
+/*# sourceMappingURL=index.css.map */
