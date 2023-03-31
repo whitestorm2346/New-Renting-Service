@@ -1,6 +1,111 @@
-@use 'global';
 @use 'main_structure';
 
 body {
     background-color: var(--clr-primary-1);
+}
+
+/*
+===============================
+header part
+===============================
+*/
+
+header {
+    .slides {
+        position: relative;
+        width: 100vw;
+        height: 90vh;
+        list-style: none;
+        overflow: hidden;
+
+        .slide {
+            width: inherit;
+            height: inherit;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .5s transform ease-in-out;
+
+            &:nth-of-type(1) {
+                background-color: var(--clr-primary-5);
+            }
+
+            &:nth-of-type(2) {
+                background-color: var(--clr-primary-9);
+                left: 100%;
+            }
+
+            &:nth-of-type(3) {
+                background-color: var(--clr-dark-1);
+                left: 200%;
+            }
+
+            &:nth-of-type(4) {
+                background-color: var(--clr-light-3);
+                left: 300%;
+            }
+        }
+
+        input[type="radio"] {
+            position: relative;
+            z-index: 4;
+            display: none;
+
+            &:nth-of-type(1):checked~.controls-visible label:nth-of-type(1) {
+                background-color: var(--clr-dark-1);
+            }
+
+            &:nth-of-type(2):checked~.controls-visible label:nth-of-type(2) {
+                background-color: var(--clr-dark-1);
+            }
+
+            &:nth-of-type(3):checked~.controls-visible label:nth-of-type(3) {
+                background-color: var(--clr-dark-1);
+            }
+
+            &:nth-of-type(4):checked~.controls-visible label:nth-of-type(4) {
+                background-color: var(--clr-dark-1);
+            }
+
+            &:nth-of-type(1):checked~.slide {
+                transform: translateX(0%);
+            }
+
+            &:nth-of-type(2):checked~.slide {
+                transform: translateX(-100%);
+            }
+
+            &:nth-of-type(3):checked~.slide {
+                transform: translateX(-200%);
+            }
+
+            &:nth-of-type(4):checked~.slide {
+                transform: translateX(-300%);
+            }
+        }
+
+        .controls-visible {
+            position: absolute;
+            width: 100%;
+            bottom: 2rem;
+            text-align: center;
+
+            label {
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                margin: 0 .35rem;
+                background-color: var(--clr-light-1);
+                border-radius: 50%;
+                border: 2px solid var(--clr-light-1);
+            }
+        }
+    }
+
+    p {
+        margin: 2rem;
+    }
 }

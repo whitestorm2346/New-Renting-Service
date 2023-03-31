@@ -50,6 +50,12 @@
     // font-family
     --ff-primary: 'Roboto', sans-serif;
     --ff-secondary: 'Open Sans', sans-serif;
+
+    // box-shadow
+    --shadow-1: 5px 5px 0 var(--clr-dark-3);
+
+    // transition
+    --transition-1: all 1.2s linear;
 }
 
 * {
